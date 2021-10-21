@@ -13,4 +13,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t mcappy/docker-react -f Dockerfile.dev .
     - name: Run the test cases
-      run: docker -e CI=true run mcappy/docker-react yarn test
+      run: docker run -e CI=true run mcappy/docker-react yarn test
